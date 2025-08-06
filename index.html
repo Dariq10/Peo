@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darik Mohamud - Full Stack Developer | Portfolio</title>
+    <meta name="description" content="Darik Mohamud - Professional Full Stack Developer specializing in modern web applications. View my portfolio of innovative projects and technical expertise.">
+    <meta name="keywords" content="Darik Mohamud, Full Stack Developer, Web Developer, Software Engineer, JavaScript, React, Node.js, Portfolio">
+    <meta name="author" content="Darik Mohamud">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Darik Mohamud - Full Stack Developer">
+    <meta property="og:description" content="Professional Full Stack Developer specializing in modern web applications and innovative solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Darik Mohamud - Full Stack Developer">
+    <meta name="twitter:description" content="Professional Full Stack Developer specializing in modern web applications.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Darik Mohamud",
+      "jobTitle": "Full Stack Developer",
+      "url": "",
+      "sameAs": [],
+      "knowsAbout": ["JavaScript", "React", "Node.js", "Web Development", "Software Engineering"]
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/YOUR_KIT_ID.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        secondary: '#F8FAFC',
+                        dark: '#181818',
+                        accent: '#8B7DFF'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-down': 'slideDown 0.6s ease-out',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'bounce-slow': 'bounceY 2s ease-in-out infinite',
+                        'rotate-slow': 'rotate 20s linear infinite'
+                    },
+                    backdropBlur: {
+                        'xs': '2px'
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-10px) rotate(1deg); }
+            50% { transform: translateY(-15px) rotate(0deg); }
+            75% { transform: translateY(-5px) rotate(-1deg); }
+        }
+        
+        @keyframes glow {
+            from { 
+                box-shadow: 0 0 30px rgba(93, 92, 222, 0.5), 0 0 60px rgba(93, 92, 222, 0.3);
+            }
+            to { 
+                box-shadow: 0 0 40px rgba(93, 92, 222, 0.8), 0 0 80px rgba(93, 92, 222, 0.5);
+            }
+        }
+        
+        @keyframes bounceY {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5D5CDE, #8B7DFF, #B794F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: gradientShift 3s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .glass-morphism {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .navbar-blur {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .dark .navbar-blur {
+            background: rgba(24, 24, 24, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .skill-card {
+            transition: all 0.4s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px) rotateY(5deg);
+        }
+        
+        .project-card {
+            transition: all 0.4s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-15px) scale(1.02);
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(93, 92, 222, 0.1) 0%, rgba(139, 125, 255, 0.1) 50%, rgba(183, 148, 246, 0.1) 100%);
+        }
+        
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+            color: #5D5CDE;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .floating-elements::before,
+        .floating-elements::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, rgba(93, 92, 222, 0.1), rgba(139, 125, 255, 0.1));
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .floating-elements::before {
+            top: 10%;
+            left: 10%;
+            animation-delay: -2s;
+        }
+        
+        .floating-elements::after {
+            bottom: 10%;
+            right: 10%;
+            animation-delay: -4s;
+        }
+        
+        .nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #5D5CDE, #8B7DFF);
+            transition: left 0.3s ease;
+        }
+        
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            left: 0;
+        }
+        
+        .developer-image {
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .developer-image:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 30px 60px rgba(93, 92, 222, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-dark text-gray-900 dark:text-white overflow-x-hidden">
+    <!-- Modern Navigation -->
+    <nav class="fixed top-0 w-full z-50 navbar-blur transition-all duration-300">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-code text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold gradient-text">Darik Mohamud</h1>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Full Stack Developer</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-2 px-1">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-2 px-1">
+                        <i class="fas fa-user mr-2"></i>About
+                    </a>
+                    <a href="#skills" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-2 px-1">
+                        <i class="fas fa-cogs mr-2"></i>Skills
+                    </a>
+                    <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-2 px-1">
+                        <i class="fas fa-folder-open mr-2"></i>Projects
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-2 px-1">
+                        <i class="fas fa-envelope mr-2"></i>Contact
+                    </a>
+                </div>
+                
+                <!-- CTA Button & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <a href="#contact" class="hidden md:flex items-center bg-gradient-to-r from-primary to-accent text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Hire Me
+                    </a>
+                    <button id="menu-toggle" class="lg:hidden text-gray-700 dark:text-gray-300 text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden lg:hidden">
+                <div class="glass-morphism rounded-2xl mt-4 p-6 space-y-4">
+                    <a href="#home" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-3">
+                        <i class="fas fa-home mr-3 w-5"></i>Home
+                    </a>
+                    <a href="#about" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-3">
+                        <i class="fas fa-user mr-3 w-5"></i>About
+                    </a>
+                    <a href="#skills" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-3">
+                        <i class="fas fa-cogs mr-3 w-5"></i>Skills
+                    </a>
+                    <a href="#projects" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-3">
+                        <i class="fas fa-folder-open mr-3 w-5"></i>Projects
+                    </a>
+                    <a href="#contact" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary transition-colors py-3">
+                        <i class="fas fa-envelope mr-3 w-5"></i>Contact
+                    </a>
+                    <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <a href="#contact" class="flex items-center justify-center bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Hire Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-bg">
+        <div class="floating-elements"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left animate-slide-up">
+                    <div class="mb-6">
+                        <span class="inline-block bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                            <i class="fas fa-rocket mr-2"></i>Available for Work
+                        </span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Hi, I'm <span class="gradient-text">Darik</span><br>
+                        <span class="gradient-text">Mohamud</span>
+                    </h1>
+                    <div class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
+                        <span id="typing-text" class="typing-cursor font-medium">Full Stack Developer</span>
+                    </div>
+                    <p class="text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-xl lg:max-w-none">
+                        Passionate about creating innovative digital solutions that make a difference. 
+                        I specialize in building scalable web applications with modern technologies and exceptional user experiences.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#projects" class="group bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300 animate-glow">
+                            <i class="fas fa-eye mr-2 group-hover:animate-pulse"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="glass-morphism text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-300 border border-primary/20">
+                            <i class="fas fa-comments mr-2"></i>
+                            Let's Talk
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="flex justify-center lg:justify-start space-x-4 mt-8">
+                        <a href="#" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                            <i class="fab fa-github group-hover:animate-bounce"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                            <i class="fab fa-linkedin group-hover:animate-bounce"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                            <i class="fab fa-twitter group-hover:animate-bounce"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                            <i class="fab fa-discord group-hover:animate-bounce"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Developer Images -->
+                <div class="relative animate-fade-in">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div class="relative z-10">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face" 
+                                 alt="Darik Mohamud" 
+                                 class="developer-image w-full max-w-md mx-auto object-cover animate-float">
+                        </div>
+                        
+                        <!-- Floating Secondary Images -->
+                        <div class="absolute -top-8 -right-8 w-24 h-24 z-20">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
+                                 alt="Darik Mohamud coding" 
+                                 class="developer-image w-full h-full object-cover animate-float" 
+                                 style="animation-delay: -2s;">
+                        </div>
+                        
+                        <div class="absolute -bottom-4 -left-8 w-32 h-24 z-20">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=150&fit=crop&crop=face" 
+                                 alt="Darik Mohamud professional" 
+                                 class="developer-image w-full h-full object-cover animate-float" 
+                                 style="animation-delay: -4s;">
+                        </div>
+                        
+                        <!-- Background Elements -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full animate-pulse-slow opacity-50"></div>
+                        <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary rounded-full animate-bounce-slow"></div>
+                        <div class="absolute -bottom-8 -right-4 w-6 h-6 bg-accent rounded-full animate-bounce-slow" style="animation-delay: -1s;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-user mr-2"></i>About Me
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Get to Know Me</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    Discover my journey as a developer and what drives my passion for technology
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Content -->
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold mb-6">
+                        <i class="fas fa-laptop-code text-primary mr-3"></i>
+                        Full Stack Developer & Problem Solver
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+                        With over 3 years of experience in web development, I specialize in creating 
+                        exceptional digital experiences that combine beautiful design with powerful functionality. 
+                        My passion lies in solving complex problems and bringing innovative ideas to life through code.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-lg">
+                        I believe in writing clean, maintainable code and staying at the forefront of 
+                        technology trends. From responsive frontend interfaces to robust backend architectures, 
+                        I'm committed to delivering solutions that exceed expectations.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 mt-12">
+                        <div class="text-center glass-morphism p-6 rounded-2xl">
+                            <i class="fas fa-project-diagram text-3xl text-primary mb-3"></i>
+                            <div class="text-2xl font-bold text-primary">50+</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm">Projects</div>
+                        </div>
+                        <div class="text-center glass-morphism p-6 rounded-2xl">
+                            <i class="fas fa-calendar-alt text-3xl text-primary mb-3"></i>
+                            <div class="text-2xl font-bold text-primary">3+</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm">Years</div>
+                        </div>
+                        <div class="text-center glass-morphism p-6 rounded-2xl">
+                            <i class="fas fa-users text-3xl text-primary mb-3"></i>
+                            <div class="text-2xl font-bold text-primary">25+</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm">Clients</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Images Grid -->
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=400&fit=crop" 
+                                 alt="Darik Mohamud working" 
+                                 class="developer-image w-full h-64 object-cover">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=200&fit=crop" 
+                                 alt="Darik Mohamud coding setup" 
+                                 class="developer-image w-full h-32 object-cover">
+                        </div>
+                        <div class="space-y-4 mt-8">
+                            <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=300&h=200&fit=crop" 
+                                 alt="Darik Mohamud meeting" 
+                                 class="developer-image w-full h-32 object-cover">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=400&fit=crop" 
+                                 alt="Darik Mohamud team work" 
+                                 class="developer-image w-full h-64 object-cover">
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full opacity-20 animate-float"></div>
+                    <div class="absolute -bottom-8 -right-8 w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full opacity-20 animate-float" style="animation-delay: -3s;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-cogs mr-2"></i>Technical Skills
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Skills & Technologies</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    The powerful tools and technologies I use to bring ideas to life
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+                <!-- Frontend Skills -->
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-js-square text-4xl text-yellow-500 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">JavaScript</h4>
+                    <p class="text-sm text-gray-500 mt-1">ES6+</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-react text-4xl text-blue-500 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">React</h4>
+                    <p class="text-sm text-gray-500 mt-1">Hooks & Context</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-vuejs text-4xl text-green-500 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Vue.js</h4>
+                    <p class="text-sm text-gray-500 mt-1">Composition API</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-angular text-4xl text-red-500 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Angular</h4>
+                    <p class="text-sm text-gray-500 mt-1">TypeScript</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-node-js text-4xl text-green-600 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Node.js</h4>
+                    <p class="text-sm text-gray-500 mt-1">Express & API</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-python text-4xl text-blue-600 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Python</h4>
+                    <p class="text-sm text-gray-500 mt-1">Django & Flask</p>
+                </div>
+                
+                <!-- Backend & Database -->
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fas fa-database text-4xl text-orange-500 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">MongoDB</h4>
+                    <p class="text-sm text-gray-500 mt-1">NoSQL</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fas fa-server text-4xl text-blue-700 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">PostgreSQL</h4>
+                    <p class="text-sm text-gray-500 mt-1">Relational DB</p>
+                </div>
+                
+                <!-- Tools & DevOps -->
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-git-alt text-4xl text-red-600 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Git</h4>
+                    <p class="text-sm text-gray-500 mt-1">Version Control</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-docker text-4xl text-blue-500 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Docker</h4>
+                    <p class="text-sm text-gray-500 mt-1">Containerization</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-aws text-4xl text-orange-600 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">AWS</h4>
+                    <p class="text-sm text-gray-500 mt-1">Cloud Services</p>
+                </div>
+                
+                <div class="skill-card glass-morphism p-6 rounded-2xl text-center group">
+                    <i class="fab fa-figma text-4xl text-purple-500 mb-4 group-hover:animate-bounce"></i>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">Figma</h4>
+                    <p class="text-sm text-gray-500 mt-1">UI/UX Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-folder-open mr-2"></i>Portfolio
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Featured Projects</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    A showcase of my recent work and innovative solutions
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card glass-morphism rounded-3xl overflow-hidden group">
+                    <div class="relative h-64 bg-gradient-to-br from-primary to-accent overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop" 
+                             alt="E-commerce platform by Darik Mohamud" 
+                             class="w-full h-full object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-white/20 backdrop-blur px-3 py-1 rounded-full text-white text-sm">
+                                <i class="fas fa-star mr-1"></i>Featured
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                            <i class="fas fa-store mr-2"></i>E-Commerce Platform
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                            Full-featured e-commerce platform with React, Node.js, and Stripe integration. 
+                            Features include user authentication, cart management, and payment processing.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">React</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Node.js</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">MongoDB</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Stripe</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="flex items-center text-primary hover:text-accent transition-colors font-medium">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                            <a href="#" class="flex items-center text-primary hover:text-accent transition-colors font-medium">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-morphism rounded-3xl overflow-hidden group">
+                    <div class="relative h-64 bg-gradient-to-br from-green-500 to-teal-500 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop" 
+                             alt="Task management app by Darik Mohamud" 
+                             class="w-full h-full object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-tasks text-6xl text-white opacity-80"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-green-600 transition-colors">
+                            <i class="fas fa-list-check mr-2"></i>Task Management App
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                            Collaborative task management application with real-time updates, team features, 
+                            and advanced project tracking capabilities.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-green-500/10 text-green-600 rounded-full text-sm font-medium">Vue.js</span>
+                            <span class="px-3 py-1 bg-green-500/10 text-green-600 rounded-full text-sm font-medium">Express</span>
+                            <span class="px-3 py-1 bg-green-500/10 text-green-600 rounded-full text-sm font-medium">Socket.io</span>
+                            <span class="px-3 py-1 bg-green-500/10 text-green-600 rounded-full text-sm font-medium">Redis</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="flex items-center text-green-600 hover:text-green-700 transition-colors font-medium">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                            <a href="#" class="flex items-center text-green-600 hover:text-green-700 transition-colors font-medium">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-morphism rounded-3xl overflow-hidden group">
+                    <div class="relative h-64 bg-gradient-to-br from-orange-500 to-red-500 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop" 
+                             alt="Blog platform by Darik Mohamud" 
+                             class="w-full h-full object-cover opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-blog text-6xl text-white opacity-80"></i>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-white/20 backdrop-blur px-3 py-1 rounded-full text-white text-sm">
+                                <i class="fas fa-fire mr-1"></i>Popular
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-orange-600 transition-colors">
+                            <i class="fas fa-pen-fancy mr-2"></i>Personal Blog Platform
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                            Modern blogging platform with markdown support, SEO optimization, 
+                            and advanced content management features.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-orange-500/10 text-orange-600 rounded-full text-sm font-medium">Next.js</span>
+                            <span class="px-3 py-1 bg-orange-500/10 text-orange-600 rounded-full text-sm font-medium">TypeScript</span>
+                            <span class="px-3 py-1 bg-orange-500/10 text-orange-600 rounded-full text-sm font-medium">Prisma</span>
+                            <span class="px-3 py-1 bg-orange-500/10 text-orange-600 rounded-full text-sm font-medium">Vercel</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="flex items-center text-orange-600 hover:text-orange-700 transition-colors font-medium">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                            <a href="#" class="flex items-center text-orange-600 hover:text-orange-700 transition-colors font-medium">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View All Button -->
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-folder-open mr-2"></i>
+                    View All Projects
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-envelope mr-2"></i>Contact Me
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Let's Work Together</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    Ready to start your next project? Let's discuss how we can create something amazing together
+                </p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <!-- Contact Info -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-6">
+                                <i class="fas fa-handshake text-primary mr-3"></i>
+                                Let's Connect
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-8 text-lg leading-relaxed">
+                                I'm always excited to discuss new opportunities and collaborate on interesting projects. 
+                                Whether you have a question, a project idea, or just want to say hello, feel free to reach out!
+                            </p>
+                        </div>
+                        
+                        <!-- Contact Cards -->
+                        <div class="space-y-6">
+                            <div class="glass-morphism p-6 rounded-2xl flex items-center space-x-4 hover:bg-primary/5 transition-all duration-300 group">
+                                <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Email Address</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">darik.mohamud@email.com</p>
+                                    <a href="mailto:darik.mohamud@email.com" class="text-primary hover:text-accent transition-colors text-sm">
+                                        Send Email <i class="fas fa-arrow-right ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="glass-morphism p-6 rounded-2xl flex items-center space-x-4 hover:bg-primary/5 transition-all duration-300 group">
+                                <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Phone Number</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
+                                    <a href="tel:+15551234567" class="text-primary hover:text-accent transition-colors text-sm">
+                                        Call Now <i class="fas fa-arrow-right ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="glass-morphism p-6 rounded-2xl flex items-center space-x-4 hover:bg-primary/5 transition-all duration-300 group">
+                                <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Location</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Available for Remote Work</p>
+                                    <p class="text-primary text-sm">Worldwide Collaboration</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="pt-8">
+                            <h4 class="font-semibold mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-12 h-12 glass-morphism rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                                    <i class="fab fa-github group-hover:animate-bounce"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 glass-morphism rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                                    <i class="fab fa-linkedin group-hover:animate-bounce"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 glass-morphism rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                                    <i class="fab fa-twitter group-hover:animate-bounce"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 glass-morphism rounded-xl flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group">
+                                    <i class="fab fa-discord group-hover:animate-bounce"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="glass-morphism rounded-3xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-center">
+                            <i class="fas fa-paper-plane text-primary mr-2"></i>
+                            Send Me a Message
+                        </h3>
+                        <form class="space-y-6" id="contact-form">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium mb-2">
+                                        <i class="fas fa-user mr-2 text-primary"></i>Full Name
+                                    </label>
+                                    <input type="text" id="name" name="name" required
+                                           class="w-full px-4 py-4 text-base rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:border-primary/50">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium mb-2">
+                                        <i class="fas fa-envelope mr-2 text-primary"></i>Email Address
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                           class="w-full px-4 py-4 text-base rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:border-primary/50">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium mb-2">
+                                    <i class="fas fa-tag mr-2 text-primary"></i>Subject
+                                </label>
+                                <input type="text" id="subject" name="subject" required
+                                       class="w-full px-4 py-4 text-base rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:border-primary/50">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">
+                                    <i class="fas fa-comment mr-2 text-primary"></i>Message
+                                </label>
+                                <textarea id="message" name="message" rows="6" required
+                                          class="w-full px-4 py-4 text-base rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:border-primary/50 resize-none"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-gradient-to-r from-primary to-accent text-white py-4 rounded-xl hover:shadow-xl hover:scale-105 transition-all duration-300 font-medium text-lg group">
+                                <i class="fas fa-paper-plane mr-2 group-hover:animate-bounce"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <!-- Logo & Title -->
+                <div class="flex items-center justify-center space-x-3 mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold gradient-text">Darik Mohamud</h3>
+                        <p class="text-gray-400 text-sm">Full Stack Developer</p>
+                    </div>
+                </div>
+                
+                <p class="text-gray-400 mb-8 text-lg max-w-2xl mx-auto">
+                    Building the Future, One Line of Code at a Time. 
+                    Let's create something amazing together.
+                </p>
+                
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="w-14 h-14 glass-morphism rounded-2xl flex items-center justify-center hover:bg-primary transition-all duration-300 group">
+                        <i class="fab fa-github text-xl group-hover:text-white group-hover:animate-bounce"></i>
+                    </a>
+                    <a href="#" class="w-14 h-14 glass-morphism rounded-2xl flex items-center justify-center hover:bg-primary transition-all duration-300 group">
+                        <i class="fab fa-linkedin text-xl group-hover:text-white group-hover:animate-bounce"></i>
+                    </a>
+                    <a href="#" class="w-14 h-14 glass-morphism rounded-2xl flex items-center justify-center hover:bg-primary transition-all duration-300 group">
+                        <i class="fab fa-twitter text-xl group-hover:text-white group-hover:animate-bounce"></i>
+                    </a>
+                    <a href="#" class="w-14 h-14 glass-morphism rounded-2xl flex items-center justify-center hover:bg-primary transition-all duration-300 group">
+                        <i class="fab fa-discord text-xl group-hover:text-white group-hover:animate-bounce"></i>
+                    </a>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="flex justify-center space-x-8 mb-8 text-gray-400">
+                    <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-500">
+                        © 2024 Darik Mohamud. All rights reserved. 
+                        <span class="text-primary">Made with <i class="fas fa-heart animate-pulse"></i> and lots of coffee</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode detection and handling
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuToggle.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.className = 'fas fa-bars';
+            } else {
+                icon.className = 'fas fa-times';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu
+                    mobileMenu.classList.add('hidden');
+                    menuToggle.querySelector('i').className = 'fas fa-bars';
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Typing animation
+        const typingText = document.getElementById('typing-text');
+        const texts = [
+            'Full Stack Developer',
+            'Problem Solver',
+            'Code Enthusiast',
+            'Tech Innovator',
+            'UI/UX Designer',
+            'System Architect'
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeText() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => {
+                    isDeleting = true;
+                }, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+            }
+
+            const speed = isDeleting ? 50 : 100;
+            setTimeout(typeText, speed);
+        }
+
+        typeText();
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0s';
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animations
+        document.querySelectorAll('section > div').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Custom success modal function
+        function showSuccessModal(title, message) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 animate-fade-in';
+            modal.innerHTML = `
+                <div class="glass-morphism p-8 rounded-3xl shadow-2xl max-w-md w-full mx-4 text-center animate-slide-up">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-check text-white text-2xl animate-bounce"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">${title}</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">${message}</p>
+                    <button class="bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium" onclick="this.closest('.fixed').remove()">
+                        <i class="fas fa-thumbs-up mr-2"></i>Awesome!
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Auto-remove after 5 seconds
+            setTimeout(() => {
+                if (modal.parentNode) {
+                    modal.remove();
+                }
+            }, 5000);
+        }
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                showSuccessModal(
+                    'Message Sent Successfully!', 
+                    'Thank you for reaching out! I\'ll get back to you within 24 hours. Have a great day!'
+                );
+                
+                // Reset form and button
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Add some interactive elements
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.querySelector('.cursor');
+            if (cursor) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            }
+        });
+
+        // Preload images for better performance
+        const imageUrls = [
+            'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face',
+            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face',
+            'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=150&fit=crop&crop=face'
+        ];
+        
+        imageUrls.forEach(url => {
+            const img = new Image();
+            img.src = url;
+        });
+    </script>
+</body>
+</html>
